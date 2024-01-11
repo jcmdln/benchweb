@@ -1,0 +1,26 @@
+# Ignore everything
+*
+
+# Include files
+!LICENSE
+!Makefile
+!README.md
+
+# Include directories
+!go/
+!go/*/
+!go/*/*.go
+!go/*/go.mod
+!go/*/go.sum
+
+!python/
+!python/*/
+!python/*/benchweb/
+!python/*/benchweb/*.py
+!python/*/pdm.lock
+!python/*/pyproject.toml
+
+!rust/
+!rust/*/
+!rust/*/*.rs
+!rust/*/Cargo.toml
