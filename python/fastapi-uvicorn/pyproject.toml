@@ -7,7 +7,15 @@ name = "benchweb"
 requires-python = ">=3.10"
 version = "0.0.0"
 
-dependencies = ["fastapi>=0.100", "httptools", "uvicorn", "uvloop"]
+dependencies = [
+    "fastapi",
+
+    # uvicorn
+    "httptools",
+    "uvicorn",
+    "uvloop",
+]
+
 
 [project.scripts]
 benchweb = "benchweb.__main__:main"

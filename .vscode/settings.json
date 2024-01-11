@@ -5,6 +5,10 @@
   },
   "editor.formatOnSave": true,
 
+  "files.associations": {
+    "pdm.lock": "toml"
+  },
+
   //
   // Extensions
   //
@@ -12,10 +16,6 @@
   "evenBetterToml.formatter.columnWidth": 100,
   "evenBetterToml.formatter.reorderKeys": true,
   "evenBetterToml.schema.enabled": false,
-
-  "ruff.enable": true,
-  "ruff.fixAll": true,
-  "ruff.organizeImports": true,
 
   //
   // Languages
@@ -29,9 +29,6 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff"
   },
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml"

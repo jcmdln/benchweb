@@ -8,14 +8,14 @@ all: build
 bench: run
 	@sleep 5
 	@echo "GET http://0.0.0.0:5150/" | vegeta attack -duration="$(DURATION)" -rate="$(RATE)" | vegeta report
-	@pkill -9 --full go-fiber
+	@pkill -9 --full benchweb
 	@sleep 5
 
 build:
-	go build
+	pdm install
 
 clean:
-	go clean
+	rm -fr .venv/
 
 run:
-	@./go-fiber &
+	@pdm run benchweb &

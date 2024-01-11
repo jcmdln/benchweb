@@ -35,5 +35,7 @@
 
 !rust/
 !rust/*/
-!rust/*/*.rs
+!rust/*/src/
+!rust/*/src/*.rs
+!rust/*/Cargo.lock
 !rust/*/Cargo.toml

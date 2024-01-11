@@ -9,3 +9,7 @@ bench:
 build:
 	@make build -C fiber
 	@make build -C net-http
+
+clean:
+	@make clean -C fiber
+	@make clean -C net-http

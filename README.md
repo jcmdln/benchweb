@@ -28,15 +28,19 @@ make bench DURATION=10s RATE=1000/s
 You may also run `make` from each subdirectory to collect benchmarks for a
 specific language or individual frameworks.
 
-# Results 2024/1/10
+# Results 2024/1/11
 
 ```
-$ make bench
+CPU: 11th Gen Intel(R) Core(TM) i7-1165G7 (4c/8t)
+MEM: 32GiB
+```
+
+```
 make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/go'
 make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/go/fiber'
-Requests      [total, rate]            10000, 1000.17
-Duration      [total, attack, wait]    9.999504279s, 9.998335571s, 1.168708ms
-Latencies     [mean, 50, 95, 99, max]  494.61µs, 161.184µs, 1.270499ms, 1.623909ms, 7.82572ms
+Requests      [total, rate]            10000, 1000.08
+Duration      [total, attack, wait]    10.000462809s, 9.999175542s, 1.287267ms
+Latencies     [mean, 50, 95, 99, max]  3.833319ms, 163.028µs, 2.36347ms, 147.083686ms, 321.986622ms
 Bytes In      [total, mean]            130000, 13.00
 Bytes Out     [total, mean]            0, 0.00
 Success       [ratio]                  100.00%
@@ -44,9 +48,9 @@ Status Codes  [code:count]             200:10000
 Error Set:
 make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go/fiber'
 make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/go/net-http'
-Requests      [total, rate]            10000, 1000.11
-Duration      [total, attack, wait]    9.999774263s, 9.998899431s, 874.832µs
-Latencies     [mean, 50, 95, 99, max]  528.46µs, 153.486µs, 1.327011ms, 1.725306ms, 6.618315ms
+Requests      [total, rate]            10000, 1000.12
+Duration      [total, attack, wait]    9.999774859s, 9.998807035s, 967.824µs
+Latencies     [mean, 50, 95, 99, max]  528.473µs, 153.729µs, 1.3371ms, 1.771319ms, 8.432604ms
 Bytes In      [total, mean]            140000, 14.00
 Bytes Out     [total, mean]            0, 0.00
 Success       [ratio]                  100.00%
@@ -55,25 +59,57 @@ Error Set:
 make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go/net-http'
 make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go'
 make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/python'
-make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep'
-Requests      [total, rate]            10000, 1000.05
-Duration      [total, attack, wait]    10.00212863s, 9.999476994s, 2.651636ms
-Latencies     [mean, 50, 95, 99, max]  1.283217ms, 240.575µs, 3.208882ms, 4.0099ms, 7.329348ms
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep-uvicorn'
+Requests      [total, rate]            10000, 1000.07
+Duration      [total, attack, wait]    9.999565537s, 9.999319154s, 246.383µs
+Latencies     [mean, 50, 95, 99, max]  1.323758ms, 238.011µs, 3.315558ms, 4.452004ms, 17.745166ms
 Bytes In      [total, mean]            130000, 13.00
 Bytes Out     [total, mean]            0, 0.00
 Success       [ratio]                  100.00%
 Status Codes  [code:count]             200:10000
 Error Set:
-make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep'
-make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/fastapi'
-Requests      [total, rate]            10000, 999.81
-Duration      [total, attack, wait]    10.078052786s, 10.001866644s, 76.186142ms
-Latencies     [mean, 50, 95, 99, max]  51.341452ms, 402.676µs, 190.204457ms, 350.98123ms, 486.932351ms
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep-uvicorn'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/fastapi-uvicorn'
+Requests      [total, rate]            10000, 1000.02
+Duration      [total, attack, wait]    10.000372142s, 9.999777849s, 594.293µs
+Latencies     [mean, 50, 95, 99, max]  48.394404ms, 416.549µs, 191.442529ms, 264.229208ms, 399.832633ms
 Bytes In      [total, mean]            150000, 15.00
 Bytes Out     [total, mean]            0, 0.00
 Success       [ratio]                  100.00%
 Status Codes  [code:count]             200:10000
 Error Set:
-make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/fastapi'
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/fastapi-uvicorn'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/flask-bjoern'
+Requests      [total, rate]            10000, 1000.03
+Duration      [total, attack, wait]    10.039033201s, 9.999671012s, 39.362189ms
+Latencies     [mean, 50, 95, 99, max]  94.348545ms, 365.647µs, 387.658513ms, 459.754338ms, 552.654417ms
+Bytes In      [total, mean]            130000, 13.00
+Bytes Out     [total, mean]            0, 0.00
+Success       [ratio]                  100.00%
+Status Codes  [code:count]             200:10000
+Error Set:
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/flask-bjoern'
 make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python'
+make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust/axum'
+Requests      [total, rate]            10000, 1000.11
+Duration      [total, attack, wait]    9.999573566s, 9.99890901s, 664.556µs
+Latencies     [mean, 50, 95, 99, max]  595.744µs, 170.673µs, 1.575269ms, 1.881957ms, 7.228391ms
+Bytes In      [total, mean]            130000, 13.00
+Bytes Out     [total, mean]            0, 0.00
+Success       [ratio]                  100.00%
+Status Codes  [code:count]             200:10000
+Error Set:
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust/axum'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust/dropshot'
+Requests      [total, rate]            10000, 1000.09
+Duration      [total, attack, wait]    10.000524675s, 9.999147626s, 1.377049ms
+Latencies     [mean, 50, 95, 99, max]  609.175µs, 167.717µs, 1.647729ms, 2.004425ms, 7.125236ms
+Bytes In      [total, mean]            150000, 15.00
+Bytes Out     [total, mean]            0, 0.00
+Success       [ratio]                  100.00%
+Status Codes  [code:count]             200:10000
+Error Set:
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust/dropshot'
+make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust'
 ```

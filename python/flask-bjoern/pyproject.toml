@@ -7,7 +7,7 @@ name = "benchweb"
 requires-python = ">=3.10"
 version = "0.0.0"
 
-dependencies = ["blacksheep", "httptools", "uvicorn", "uvloop"]
+dependencies = ["bjoern", "flask"]
 
 [project.scripts]
 benchweb = "benchweb.__main__:main"
