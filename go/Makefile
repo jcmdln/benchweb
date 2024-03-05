@@ -1,6 +1,6 @@
 .POSIX:
 
-all: build
+all: build bench
 
 bench:
 	@make bench -C fiber
