@@ -20,6 +20,9 @@
 !.vscode/extensions.json
 !.vscode/settings.json
 
+!results/
+!results/*.md
+
 !go/
 !go/*/
 !go/*/*.go
