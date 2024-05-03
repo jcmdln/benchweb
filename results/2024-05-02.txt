@@ -1,0 +1,105 @@
+make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/go'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/go/fiber'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+3436191 requests in 29.171543218s, 370.30MB read
+Requests/sec:           117792.57
+Transfer/sec:           12.69MB
+Avg Req Time:           84.894µs
+Fastest Request:        18.87µs
+Slowest Request:        3.625525ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go/fiber'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/go/net-http'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+2730897 requests in 29.319200617s, 296.90MB read
+Requests/sec:           93143.64
+Transfer/sec:           10.13MB
+Avg Req Time:           107.361µs
+Fastest Request:        21.908µs
+Slowest Request:        4.080161ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go/net-http'
+make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/go'
+make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/python'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep-uvicorn'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+1677695 requests in 29.631620504s, 208.00MB read
+Requests/sec:           56618.40
+Transfer/sec:           7.02MB
+Avg Req Time:           176.621µs
+Fastest Request:        61.571µs
+Slowest Request:        4.556001ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/blacksheep-uvicorn'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/fastapi-uvicorn'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+1168007 requests in 29.658757493s, 144.81MB read
+Requests/sec:           39381.52
+Transfer/sec:           4.88MB
+Avg Req Time:           253.926µs
+Fastest Request:        80.315µs
+Slowest Request:        5.741978ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/fastapi-uvicorn'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/flask-bjoern'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+327097 requests in 29.82034253s, 40.55MB read
+Requests/sec:           10968.92
+Transfer/sec:           1.36MB
+Avg Req Time:           911.666µs
+Fastest Request:        331.456µs
+Slowest Request:        15.03151ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/flask-bjoern'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/flask-gunicorn'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+325454 requests in 29.819982811s, 40.35MB read
+Requests/sec:           10913.96
+Transfer/sec:           1.35MB
+Avg Req Time:           916.257µs
+Fastest Request:        334.642µs
+Slowest Request:        14.078497ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/flask-gunicorn'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/python/litestar-uvicorn'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+1220918 requests in 29.7020867s, 151.37MB read
+Requests/sec:           41105.46
+Transfer/sec:           5.10MB
+Avg Req Time:           243.276µs
+Fastest Request:        87.182µs
+Slowest Request:        5.182574ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python/litestar-uvicorn'
+make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/python'
+make[1]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust/axum'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+3307428 requests in 29.304337943s, 356.43MB read
+Requests/sec:           112864.79
+Transfer/sec:           12.16MB
+Avg Req Time:           88.601µs
+Fastest Request:        18.003µs
+Slowest Request:        2.774568ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust/axum'
+make[2]: Entering directory '/home/john/Projects/jcmdln/benchweb/rust/dropshot'
+Running 30s test @ http://localhost:5150
+  10 goroutine(s) running concurrently
+2831686 requests in 29.388006444s, 426.68MB read
+Requests/sec:           96355.16
+Transfer/sec:           14.52MB
+Avg Req Time:           103.782µs
+Fastest Request:        20.255µs
+Slowest Request:        3.274993ms
+Number of Errors:       0
+make[2]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust/dropshot'
+make[1]: Leaving directory '/home/john/Projects/jcmdln/benchweb/rust'

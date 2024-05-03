@@ -16,7 +16,6 @@ dependencies = [
     "uvloop",
 ]
 
-
 [project.scripts]
 benchweb = "benchweb.__main__:main"
 

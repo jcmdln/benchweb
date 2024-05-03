@@ -8,16 +8,28 @@
 
 # Using
 
+Install `go-wrk`:
+
+```sh
+go install github.com/tsliwowicz/go-wrk@latest
+```
+
 By default, make with build and benchmark everything:
 
 ```sh
 make
 ```
 
-The following example uses the default benchmarking values for Python frameworks:
+You may also benchmark a specific language:
 
 ```sh
-make -C python/ bench DURATION=10s RATE=1000/s
+make -C python/ bench
+```
+
+Or benchmark a specific framework:
+
+```sh
+make -C python/litestar-uvicorn bench
 ```
 
 # Results

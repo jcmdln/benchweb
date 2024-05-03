@@ -21,7 +21,7 @@
 !.vscode/settings.json
 
 !results/
-!results/*.md
+!results/*.txt
 
 !go/
 !go/*/
